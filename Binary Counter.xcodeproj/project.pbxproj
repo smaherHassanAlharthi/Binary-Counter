@@ -13,9 +13,7 @@
 		529EF37C277BADBC00460FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529EF37A277BADBC00460FFF /* Main.storyboard */; };
 		529EF37E277BADBF00460FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529EF37D277BADBF00460FFF /* Assets.xcassets */; };
 		529EF381277BADBF00460FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529EF37F277BADBF00460FFF /* LaunchScreen.storyboard */; };
-		529EF38C277BADC000460FFF /* Binary_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529EF38B277BADC000460FFF /* Binary_CounterTests.swift */; };
-		529EF396277BADC000460FFF /* Binary_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529EF395277BADC000460FFF /* Binary_CounterUITests.swift */; };
-		529EF398277BADC000460FFF /* Binary_CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529EF397277BADC000460FFF /* Binary_CounterUITestsLaunchTests.swift */; };
+		52BB255B277BBE82000C2B92 /* BinaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB255A277BBE81000C2B92 /* BinaryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,8 @@
 		529EF380277BADBF00460FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		529EF382277BADBF00460FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		529EF387277BADBF00460FFF /* Binary CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		529EF38B277BADC000460FFF /* Binary_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary_CounterTests.swift; sourceTree = "<group>"; };
 		529EF391277BADC000460FFF /* Binary CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		529EF395277BADC000460FFF /* Binary_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary_CounterUITests.swift; sourceTree = "<group>"; };
-		529EF397277BADC000460FFF /* Binary_CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary_CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52BB255A277BBE81000C2B92 /* BinaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				529EF373277BADBC00460FFF /* Binary Counter */,
-				529EF38A277BADBF00460FFF /* Binary CounterTests */,
-				529EF394277BADC000460FFF /* Binary CounterUITests */,
 				529EF372277BADBC00460FFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,28 +97,12 @@
 				529EF376277BADBC00460FFF /* SceneDelegate.swift */,
 				529EF378277BADBC00460FFF /* ViewController.swift */,
 				529EF37A277BADBC00460FFF /* Main.storyboard */,
+				52BB255A277BBE81000C2B92 /* BinaryTableViewCell.swift */,
 				529EF37D277BADBF00460FFF /* Assets.xcassets */,
 				529EF37F277BADBF00460FFF /* LaunchScreen.storyboard */,
 				529EF382277BADBF00460FFF /* Info.plist */,
 			);
 			path = "Binary Counter";
-			sourceTree = "<group>";
-		};
-		529EF38A277BADBF00460FFF /* Binary CounterTests */ = {
-			isa = PBXGroup;
-			children = (
-				529EF38B277BADC000460FFF /* Binary_CounterTests.swift */,
-			);
-			path = "Binary CounterTests";
-			sourceTree = "<group>";
-		};
-		529EF394277BADC000460FFF /* Binary CounterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				529EF395277BADC000460FFF /* Binary_CounterUITests.swift */,
-				529EF397277BADC000460FFF /* Binary_CounterUITestsLaunchTests.swift */,
-			);
-			path = "Binary CounterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BB255B277BBE82000C2B92 /* BinaryTableViewCell.swift in Sources */,
 				529EF379277BADBC00460FFF /* ViewController.swift in Sources */,
 				529EF375277BADBC00460FFF /* AppDelegate.swift in Sources */,
 				529EF377277BADBC00460FFF /* SceneDelegate.swift in Sources */,
@@ -268,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529EF38C277BADC000460FFF /* Binary_CounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529EF398277BADC000460FFF /* Binary_CounterUITestsLaunchTests.swift in Sources */,
-				529EF396277BADC000460FFF /* Binary_CounterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
